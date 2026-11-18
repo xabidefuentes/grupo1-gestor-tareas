@@ -3,6 +3,8 @@
 Aplicación web sencilla desarrollada con **Java Jakarta EE** (Servlets, JSP y Filtros)
 y desplegada en **Apache Tomcat 11**. No usa base de datos: las tareas se guardan en memoria.
 
+📄 **Documentación con capturas de funcionamiento:** [Word (.docx)](docs/Documentacion_Grupo1.docx) · [versión web](docs/DOCUMENTACION.md)
+
 ## Integrantes y reparto del trabajo
 
 | Miembro | Parte | Ficheros |
