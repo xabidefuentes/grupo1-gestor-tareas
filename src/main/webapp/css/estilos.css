@@ -1,0 +1,128 @@
+/* Hoja de estilos de la aplicacion. Autor: Ibai */
+
+:root {
+    --principal: #2f6fde;
+    --fondo: #f2f4f8;
+    --texto: #1f2933;
+    --gris: #6b7280;
+    --borde: #e3e7ee;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+}
+
+/* ---- Cabecera ---- */
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 24px;
+    background: var(--principal);
+}
+.barra a { color: #fff; text-decoration: none; }
+.logo { font-size: 1.2rem; font-weight: bold; }
+.barra nav a { margin-left: 18px; opacity: .85; }
+.barra nav a:hover { opacity: 1; }
+
+/* ---- Estructura ---- */
+.contenido { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+.tarjeta {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+}
+.centrado { text-align: center; }
+h1, h2 { margin-top: 0; }
+
+.boton {
+    display: inline-block;
+    background: var(--principal);
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.boton:hover { filter: brightness(1.1); }
+
+/* ---- Inicio ---- */
+.resumen { display: flex; justify-content: center; gap: 40px; margin: 24px 0; }
+.resumen span { display: block; font-size: 2.4rem; font-weight: bold; color: var(--principal); }
+
+/* ---- Formulario ---- */
+.nueva { display: flex; gap: 10px; flex-wrap: wrap; }
+.nueva input[type=text] { flex: 1; min-width: 200px; }
+input, select {
+    padding: 10px;
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.aviso { padding: 10px 14px; border-radius: 6px; }
+.ok { background: #e6f6ec; color: #1d7a3e; }
+.ko { background: #fdecec; color: #b42318; }
+
+/* ---- Lista ---- */
+.cabecera-lista { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.filtros a {
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: var(--gris);
+    text-decoration: none;
+}
+.filtros a.activo { background: var(--principal); color: #fff; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th, td { padding: 10px 8px; border-bottom: 1px solid var(--borde); text-align: left; }
+th { color: var(--gris); font-weight: normal; font-size: .9rem; }
+td form { margin: 0; }
+.fecha { color: var(--gris); font-size: .9rem; }
+tr.hecha .titulo { text-decoration: line-through; color: var(--gris); }
+.vacio { color: var(--gris); text-align: center; padding: 20px; }
+
+.check {
+    width: 26px; height: 26px;
+    border: 2px solid var(--principal);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--principal);
+    cursor: pointer;
+}
+.borrar { background: none; border: 0; font-size: 1.1rem; cursor: pointer; }
+
+.etiqueta { padding: 3px 10px; border-radius: 12px; font-size: .85rem; }
+.alta  { background: #fdecec; color: #b42318; }
+.media { background: #fff4e0; color: #a15c00; }
+.baja  { background: #e6f6ec; color: #1d7a3e; }
+
+/* ---- Equipo ---- */
+.equipo { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
+.miembro { border: 1px solid var(--borde); border-radius: 10px; padding: 16px; text-align: center; }
+.avatar {
+    width: 56px; height: 56px; margin: 0 auto;
+    border-radius: 50%;
+    background: var(--principal);
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 56px;
+}
+.rol { color: var(--principal); font-weight: bold; }
+
+/* ---- Error ---- */
+.codigo-error { font-size: 4rem; font-weight: bold; color: var(--principal); margin: 0; }
+
+/* ---- Pie ---- */
+.pie { text-align: center; color: var(--gris); font-size: .9rem; padding: 20px; }

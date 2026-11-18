@@ -1,0 +1,7 @@
+<%-- Pie comun a todas las paginas. Autor: Ibai --%>
+</main>
+<footer class="pie">
+    Grupo 1 &middot; Ibai, Iker, David y Xabi &middot; Jakarta EE + Apache Tomcat
+</footer>
+</body>
+</html>

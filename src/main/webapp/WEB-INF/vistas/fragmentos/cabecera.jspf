@@ -1,0 +1,19 @@
+<%-- Cabecera comun a todas las paginas. Autor: Ibai --%>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= request.getAttribute("tituloPagina") %> | Grupo 1</title>
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/css/estilos.css">
+</head>
+<body>
+<header class="barra">
+    <a class="logo" href="<%= request.getContextPath() %>/">&#9989; Gestor de Tareas</a>
+    <nav>
+        <a href="<%= request.getContextPath() %>/">Inicio</a>
+        <a href="<%= request.getContextPath() %>/tareas">Tareas</a>
+        <a href="<%= request.getContextPath() %>/equipo.jsp">Equipo</a>
+    </nav>
+</header>
+<main class="contenido">
